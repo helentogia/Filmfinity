@@ -20,6 +20,21 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Filmfinity">
         <activity
+            android:name=".RateMovieActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UpdateMovieActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RemoveMovieActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AddMovieActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminActivity"
+            android:exported="false" />
+        <activity
             android:name=".FavoriteMoviesActivity"
             android:exported="false" />
         <activity
