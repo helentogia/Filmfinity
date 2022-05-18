@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UpdateMovieActivity">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize">
+
+            <ImageView
+                android:id="@+id/updateMovieBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:padding="15dp"
+                android:src="@drawable/back_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Update Movie"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"/>
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Use the text box bellow"
+            android:textSize="15sp"
+            android:padding="10dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="to search for a movie using its title"
+            android:textSize="15sp"
+            android:padding="10dp"
+            android:layout_gravity="center"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:padding="16dp"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/updateMovieTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/editbox_background"
+                android:drawableEnd="@drawable/down_icon"
+                android:gravity="center_vertical"
+                android:hint="Select Movie"
+                android:padding="12dp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_height="fill_parent"
+            android:layout_width="fill_parent">
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_height="fill_parent"
+                android:layout_width="0dp"
+                android:orientation="vertical"
+                android:padding="5dp">
+                <EditText
+                    android:id="@+id/updateMovieDescription"
+                    android:layout_width="wrap_content"
+                    android:layout_height="250dp"
+                    android:hint="Insert the desciption of the movie..."
+                    android:layout_gravity="center"
+                    android:layout_margin="20dp"
+                    android:inputType="textMultiLine"/>
+
+                <Button
+                    android:id="@+id/updateDescription"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:text="Update Description"
+                    android:layout_gravity="center"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_height="fill_parent"
+                android:layout_width="0dp"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="250dp"
+                    android:id="@+id/updateMovieImage"
+                    android:layout_gravity="center"
+                    android:layout_margin="20dp"
+                    android:src="@drawable/upload_icon"/>
+
+                <Button
+                    android:id="@+id/updateImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:text="Update Image"
+                    android:layout_gravity="center"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
