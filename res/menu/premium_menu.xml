@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/premium_nav_home"
+            android:title="Home"
+            android:icon="@drawable/home_icon"/>
+        <item
+            android:id="@+id/premium_nav_list"
+            android:title="My List"
+            android:icon="@drawable/list_icon"/>
+        <item
+            android:id="@+id/premium_nav_rate"
+            android:title="Rate"
+            android:icon="@drawable/rate_icon"/>
+        <item
+            android:id="@+id/premium_nav_review"
+            android:title="Review"
+            android:icon="@drawable/review_icon"/>
+    </group>
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/premium_nav_info"
+            android:title="Information"
+            android:icon="@drawable/info_icon"/>
+        <item
+            android:id="@+id/premium_nav_logout"
+            android:title="Logout"
+            android:icon="@drawable/logout_icon"/>
+
+    </group>
+</menu>
